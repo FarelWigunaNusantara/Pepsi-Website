@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="gambar/logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="gambar/logo.png" class="logo" /></a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>Brings you back<br /><span>To life!</span></h2>
+          <p>
+            Pepsi is a globally renowned carbonated soft drink known for its refreshing and crisp taste. With its signature blend of cola flavor and effervescent bubbles, Pepsi offers a delightful beverage experience that quenches your
+            thirst and satisfies your craving for a sweet, fizzy indulgence. Whether enjoyed on its own or paired with your favorite snacks, Pepsi remains a popular choice among beverage enthusiasts worldwide.
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="gambar/pepsi001.png" class="pepsi" />
+        </div>
+      </div>
+      <ul class="thumb">
+        <li><img src="gambar/pepsi001.png" onclick="imgSlider('gambar/pepsi001.png');ChangeBgColor('#0062be')" /></li>
+        <li><img src="gambar/pepsi002.png" onclick="imgSlider('gambar/pepsi002.png');ChangeBgColor('#e60c2c')" /></li>
+        <li><img src="gambar/pepsi003.png" onclick="imgSlider('gambar/pepsi003.png');ChangeBgColor('#1e1e1e')" /></li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="gambar/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="gambar/instagram.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="gambar/twitter.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".pepsi").src = anything;
+      }
+      function ChangeBgColor(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+    </script>
+  </body>
+</html>
